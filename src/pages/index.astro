@@ -11,5 +11,26 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<p>Test with astro@2.0.0-beta.2 and prerender option and Netlify adapter configurated</p>
+		<p>I have created 2 pages with getStaticPatch [cat].astro and [dog].astro (and prerender = true)</p>
+		<p>If we have more than one page with dinamic routes in the same folder we get an error...</p>
+		<p>In this example we have 7 routes</p>
+		<p>
+			<a href="/">/ - Index (this page)</a> <br>
+			<a href="/cat1">/cat1</a><br>
+			<a href="/cat2">/cat2</a><br>
+			<a href="/cat3">/cat4</a><br>
+			<a href="/dog1">/dog1</a><br>
+			<a href="/dog2">/dog2</a><br>
+			<a href="/dog3">/dog3</a><br>
+		</p>
+		<p>All dog routes doesn't works...</p>
+
+		<p>And if you input any route then cat page will appear... never enter in the dog page.</p>
+
+		<p>For example: <a href="/hello-world">/hello-world</a></p>
+
+		<p>If you take out the Netlify adapter configuration... everything works fine.</p>
+		
 	</body>
 </html>
